@@ -1,0 +1,256 @@
+/* Global Styles */
+.video-gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff; /* White Background */
+    color: #000;
+  }
+  
+  /* ------------------ Thumbnail Page ------------------ */
+  
+  /* Video Grid (Responsive Layout) */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    width: 95%;
+    max-width: 1400px;
+    height: 700px;
+  }
+  
+  
+  /* Video Card */
+  .video-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Thumbnail Image */
+  .thumbnail-container {
+    position: relative;
+     /* ✅ FIXED: Required for duration positioning */
+  }
+  
+  .thumbnail {
+    max-width: 600px;
+    padding-left: 25px;
+    padding-top: 20px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Video Duration Tag */
+  .duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Video Info */
+  .video-info {
+    padding: 12px;
+  }
+  
+  .video-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    white-space: nowrap; /* ✅ FIXED: Prevents text overflow */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .video-card-meta {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Thumbnail Description */
+  .video-card-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    text-align: justify;
+  }
+  
+  /* ------------------ Video Player Page ------------------ */
+  
+  .video-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  /* Video Wrapper */
+  .video-wrapper {
+    width: 100%;
+  }
+  
+  .video-player {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Video Title */
+  .video-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #222;
+  }
+  
+  /* Video Meta Info */
+  .video-meta {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  /* Player Description */
+  .video-description {
+    font-size: 16px;
+    color: #444;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Like & Share Buttons */
+  .video-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .like-button,
+  .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    min-width: 120px; /* ✅ FIXED: Prevents buttons from shrinking */
+    font-size: 16px;
+    font-weight: bold;
+    background: #ff0000; /* YouTube Red */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .like-button:hover,
+  .share-button:hover {
+    background: #cc0000;
+    transform: scale(1.1);
+  }
+  
+  /* Back Button */
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    font-size: 16px;
+    background: #1207eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background: #0c46cc;
+    transform: scale(1.05);
+  }
+  
+  /* ------------------ Responsive Design ------------------ */
+  
+  /* Tablets */
+  @media (max-width: 900px) {
+    .video-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .video-player-container {
+      width: 95%;
+    }
+  
+    .video-title {
+      font-size: 20px;
+    }
+  
+    .video-description {
+      font-size: 15px;
+    }
+  
+    .like-button,
+    .share-button {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  }
+  
+  /* Mobile Phones */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .video-card-title {
+      font-size: 16px;
+    }
+  
+    .video-card-description {
+      font-size: 13px;
+    }
+  
+    .video-title {
+      font-size: 18px;
+    }
+  
+    .video-description {
+      font-size: 14px;
+    }
+  
+    .like-button,
+    .share-button {
+      font-size: 13px; /* ✅ FIXED: Prevents text from shrinking too much */
+      padding: 8px 14px;
+    }
+  
+    .back-button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }

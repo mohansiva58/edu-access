@@ -1,0 +1,131 @@
+/* CommunitySection.css */
+.community-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  margin-right: 20px;
+}
+
+.icon-bg {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-container {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}

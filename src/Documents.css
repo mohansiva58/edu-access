@@ -1,0 +1,225 @@
+/* Documents.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.search-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-filters input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-filters .relative {
+  position: relative;
+}
+
+.search-filters .absolute {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.search-filters button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-filters button:hover {
+  background-color: #f5f5f5;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categories button {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.categories button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.doc-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.doc-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doc-card .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.doc-card .p-2 {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.doc-card .w-6 {
+  width: 24px;
+  height: 24px;
+  color: #4F46E5;
+}
+
+.doc-card .text-indigo-600 {
+  color: #4F46E5;
+}
+
+.doc-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.doc-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.doc-card .text-sm {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.doc-card .download-btn {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.doc-card .download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .search-filters {
+    flex-direction: column;
+  }
+
+  .search-filters input {
+    font-size: 0.9rem;
+  }
+
+  .categories button {
+    font-size: 0.9rem;
+  }
+
+  .doc-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .doc-card p {
+    font-size: 0.9rem;
+  }
+
+  .doc-card .text-sm {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .header p {
+    font-size: 0.8rem;
+  }
+
+  .search-filters input {
+    font-size: 0.8rem;
+  }
+
+  .categories button {
+    font-size: 0.8rem;
+  }
+
+  .doc-card h3 {
+    font-size: 1rem;
+  }
+
+  .doc-card p {
+    font-size: 0.8rem;
+  }
+
+  .doc-card .text-sm {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,234 @@
+/* General Styles */
+.videos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Search and Filter Styles */
+  .search-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    position: relative;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .filter-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .filter-icon {
+    margin-right: 8px;
+    color: #666;
+  }
+  
+  /* Categories Styles */
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .category-button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .category-button.active {
+    background-color: #4F46E5;
+    color: #fff;
+  }
+  
+  .category-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Videos Grid Styles */
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  
+  .video-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail-container {
+    position: relative;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .thumbnail-container:hover .play-overlay {
+    opacity: 1;
+  }
+  
+  .play-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  .play-icon {
+    width: 24px;
+    height: 24px;
+    color: #4F46E5;
+  }
+  
+  .video-details {
+    padding: 20px;
+  }
+  
+  .category-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .category {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4F46E5;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .star-icon {
+    width: 16px;
+    height: 16px;
+    color: #FFD700;
+    margin-right: 4px;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .instructor {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .duration {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .clock-icon {
+    width: 16px;
+    height: 16px;
+    color: #666;
+    margin-right: 8px;
+  }
+  
+  .watch-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4F46E5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .watch-button:hover {
+    background-color: #4338CA;
+  }

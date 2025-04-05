@@ -1,0 +1,142 @@
+.roadmap-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.roadmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.roadmap-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.roadmap-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-outline, .button-primary {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.button-primary {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.initiative-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon-container {
+  background: #eef2ff;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.initiative-metrics {
+  display: flex;
+  align-items: center;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.timeline-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.milestones {
+  margin-top: 1.5rem;
+}
+
+.milestone {
+  margin-bottom: 2rem;
+}
+
+.milestone-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.milestone-duration {
+  background: #eef2ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #4f46e5;
+}
+
+.milestone-items {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.bullet {
+  width: 6px;
+  height: 6px;
+  background: #4f46e5;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.icon-completed {
+  color: green;
+}
+
+.icon-current {
+  color: #4f46e5;
+}
+
+.icon-upcoming {
+  color: #ccc;
+}
