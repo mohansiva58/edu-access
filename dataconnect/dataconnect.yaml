@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "edu-access"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "edu-access-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

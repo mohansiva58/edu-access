@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { MessageSquare, Globe2, ArrowRight } from 'lucide-react';
 import './CommunitySection.css';

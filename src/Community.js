@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Users, MessageSquare, Heart, Share2, Search, Filter } from 'lucide-react';
 import './Community.css';

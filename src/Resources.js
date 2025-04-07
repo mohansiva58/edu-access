@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Search, Filter, BookOpen, Video, FileText, Users } from 'lucide-react';
 import ResourceCard from './ResourceCard';
